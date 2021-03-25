@@ -1,0 +1,11 @@
+
+postgres:
+    host: 'localhost'
+    port: 5432
+    database: 'lego_db'
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:admin}
+    connection:
+        idle-time-sec: 60
+        max-connections: 100
+        initial-connections: 50
